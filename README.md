@@ -20,6 +20,6 @@
         Key (length 16 bytes):
         1234567890123456
     - Để thoát khỏi chương trình tại bất cứ đâu, nhập "exit"
-    File được mã hóa cùng folder chứa file gốc và thêm đuôi -encrypted hoặc -decrypted sau tên.
+    - File được mã hóa cùng folder chứa file gốc và thêm đuôi -encrypted hoặc -decrypted sau tên.
   
  
