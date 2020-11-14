@@ -62,7 +62,7 @@
 							<goal>copy-resources</goal>
 						</goals>
 						<configuration>
-							<outputDirectory>${basedir}/target/Crunchify</outputDirectory>
+							<outputDirectory>${basedir}/target/project2</outputDirectory>
 							<resources>
 								<resource>
 									<directory>resources</directory>
@@ -85,7 +85,7 @@
 							<goal>copy-dependencies</goal>
 						</goals>
 						<configuration>
-							<outputDirectory>${project.build.directory}/Crunchify/lib</outputDirectory>
+							<outputDirectory>${project.build.directory}/project2/lib</outputDirectory>
 							<overWriteReleases>false</overWriteReleases>
 							<overWriteSnapshots>false</overWriteSnapshots>
 							<overWriteIfNewer>true</overWriteIfNewer>
@@ -102,7 +102,7 @@
 						<manifest>
 							<addClasspath>true</addClasspath>
 							<classpathPrefix>lib/</classpathPrefix>
-							<mainClass>com.github.pandachanv587.Test</mainClass>
+							<mainClass>com.project2.matmaungdung.common</mainClass>
 
 						</manifest>
 						<manifestEntries>
@@ -110,7 +110,7 @@
 						</manifestEntries>
 					</archive>
 
-					<finalName>Crunchify/Crunchify</finalName>
+					<finalName>project2/project2</finalName>
 				</configuration>
 			</plugin>
 		</plugins>
