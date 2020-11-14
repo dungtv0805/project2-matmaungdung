@@ -1,4 +1,4 @@
-package com.util;
+package com.github.pandachanv587;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -17,13 +17,8 @@ import com.github.pandachanv587.aesutil.AESUtil;
 import com.github.pandachanv587.aesutil.exception.AESConfigParamsError;
 import com.github.pandachanv587.aesutil.exception.CipherCreateError;
 
-import lombok.Getter;
-import lombok.Setter;
-
-@Getter
-@Setter
 public class Util {
-	private static AESLevel level = AESLevel.LEVEL_256;
+	private static AESLevel level = AESLevel.LEVEL_128;
 	private static AESOperationMode operationMode;
 	private static AESPaddingMode paddingMode;
 
@@ -50,7 +45,9 @@ public class Util {
 		return aesUtil.decrypt(bytes);
 	}
 
-	public static byte[] aesCTREncrypt(byte[] plain, String key) throws InvalidKeyException, InvalidAlgorithmParameterException, AESConfigParamsError, CipherCreateError, BadPaddingException, IllegalBlockSizeException {
+	public static byte[] aesCTREncrypt(byte[] plain, String key)
+			throws InvalidKeyException, InvalidAlgorithmParameterException, AESConfigParamsError, CipherCreateError,
+			BadPaddingException, IllegalBlockSizeException {
 		operationMode = AESOperationMode.CTR;
 		paddingMode = AESPaddingMode.NOPADDING;
 		AESConfig aesConfig = AESConfig.builder().key(key).level(level).operationMode(operationMode)
@@ -58,8 +55,10 @@ public class Util {
 		AESUtil aesUtil = new AESUtil(aesConfig);
 		return aesUtil.encrypt(plain);
 	}
-	
-	public static byte[] aesCTRDecrypt(byte[] bytes, String key) throws InvalidKeyException, InvalidAlgorithmParameterException, AESConfigParamsError, CipherCreateError, BadPaddingException, IllegalBlockSizeException {
+
+	public static byte[] aesCTRDecrypt(byte[] bytes, String key)
+			throws InvalidKeyException, InvalidAlgorithmParameterException, AESConfigParamsError, CipherCreateError,
+			BadPaddingException, IllegalBlockSizeException {
 		operationMode = AESOperationMode.CTR;
 		paddingMode = AESPaddingMode.NOPADDING;
 		AESConfig aesConfig = AESConfig.builder().key(key).level(level).operationMode(operationMode)

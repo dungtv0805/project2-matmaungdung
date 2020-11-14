@@ -1,4 +1,8 @@
 Manifest-Version: 1.0
-Build-Jdk-Spec: 14
+Built-By: helloword
+Build-Jdk: 14.0.2
+Class-Path: . lib/bcprov-jdk15on-1.62.jar lib/commons-codec-1.13.jar lib
+ /commons-io-2.6.jar
+Main-Class: com.github.pandachanv587.Test
 Created-By: Maven Integration for Eclipse
 
