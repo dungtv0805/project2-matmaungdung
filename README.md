@@ -1,5 +1,5 @@
 # project2-matmaungdung
-- Open terminal trong folder và run command:
+- Open terminal trong folder chứa project và run command:
     java -jar target/project2/project2.jar (win, linux)
     
 - Sau khi khởi chạy có các lựa chọn từ 1-4 ứng với encrypt, decrypt của CBC và CTR
