@@ -2,6 +2,7 @@
 - Cách khởi chạy
   Trong folder chứa project sử dụng lệnh :
     java -jar target/project2/project2.jar (win, linux)
+    
     Hoặc có thể run trực tiếp class common.java trong package com.project2.matmaungdung
   - Sau khi khởi chạy có các lựa chọn từ 1-4 ứng với encrypt, decrypt của CBC và CTR
       1: Aes/cbc encrypt
